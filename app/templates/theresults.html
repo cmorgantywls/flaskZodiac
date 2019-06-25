@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Shine on, you crazy {{ sign }}</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="static/results.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Megrim|Montserrat|Montserrat+Subrayada&display=swap" rel="stylesheet">
+        
+        <script src="static/p5.min.js"></script>
+        <script src="static/p5.dom.js"></script>
+        
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col m4" id="logo">
+                    <img src={{ media.logo }} width="150" title={{ horoscope.sign }}>
+                </div>
+                <div class="col m8" id="signTitle">
+                    <h1>{{ sign }}</h1>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class = "col m4">
+                    <h3>{{ horoscope.current_date }}</h3>
+                </div>
+                <div class="col m4" id="birthday">
+                    {{ month }} {{ day }}
+                </div>
+                <div class="col m4" id="dateRange">
+                    The best birthday.
+                </div>
+            </div>
+            
+            
+            <div class="row">
+                <div class="col m4" id="luckyMood">
+                    <ul>
+                        <li>I'd describe your day as {{ horoscope.mood }}.</li>
+                        <li>Your luckiest time today is {{ horoscope.lucky_time }}.</li>
+                        <li>You are most compatible with {{ horoscope.compatibility }}.</li>
+                        <li>Your lucky number is {{ horoscope.lucky_number }}.</li>
+                        <li>Your lucky color is {{ horoscope.color }}.</li>
+                    </ul>
+                    <div id="zodiacIMG">
+                        <img src={{ media.poster }} title="Ainorwei Lin on Behance" alt="Ainorwei Lin on Behance {{ horoscope.sign }}" width="300">
+                    </div>
+                </div>
+                <div class="col m8" id="horoscope">
+                   <p> {{ horoscope.description }} </p>
+                
+                    <iframe width="560" height="315" src= {{ media.youtubeVid }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col m12" id="goBack">
+                <a href='/index'>Try Again.</a>
+            </div>
+            </div>
+            
+        </div>
+        <script src="static/results.js"></script>
+    </body>
+</html>

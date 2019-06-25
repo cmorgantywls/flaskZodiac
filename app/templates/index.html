@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Baby, what's your sign?</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Megrim|Montserrat|Montserrat+Subrayada&display=swap" rel="stylesheet">
+        
+        <!--make a dynamic p5 background???-->
+        <script src="static/p5.min.js"></script>
+        <script src="static/p5.dom.js"></script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="titleDiv">
+                <h1 id="title">What's your sign?</h1>
+            </div>
+            <div id="instructions">
+                <p>Enter your month and day of birth.</p>
+            </div>
+            
+            <div id="theForm">
+                <form method="post" action="/sendHoroscope">
+                  <label for="month">MONTH:</label>
+                  <input type='text' name='month'>
+                  <label for="day">DAY:</label>
+                  <input type='number' name='day' min='0'max='31'>
+                  <input type='submit'>
+                </form>
+            </div>
+        </div>
+        <script src="static/sketch.js"></script>
+    </body>
+</html>
