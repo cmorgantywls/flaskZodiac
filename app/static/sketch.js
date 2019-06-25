@@ -50,7 +50,7 @@ class Constellation{
    this.y=y
    this.xSpeed = random(-2,2)
    this.ySpeed = random(-2,2)
-   this.col = color(255, 100)
+   this.col = color(255, 50)
    this.diameter = 25
    this.fromMouse = dist(mouseX,mouseY,this.x,this.y)
   }
