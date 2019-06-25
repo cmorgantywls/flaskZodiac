@@ -22,7 +22,7 @@ def getHoroscope(theSign):
          "mood": horoscope.mood, 
          "description": horoscope.description
         }
-        return dictHoroscope
+    return dictHoroscope
 
 #check if month is a match
 def closeEnough(userInput,target):
