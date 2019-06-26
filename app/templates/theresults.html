@@ -45,9 +45,6 @@
                         <li>Your lucky number is {{ horoscope.lucky_number }}.</li>
                         <li>Your lucky color is {{ horoscope.color }}.</li>
                     </ul>
-                    <div id="zodiacIMG">
-                        <img src={{ media.poster }} title="Ainorwei Lin on Behance" alt="Ainorwei Lin on Behance {{ horoscope.sign }}" width="300">
-                    </div>
                 </div>
                 <div class="col m8" id="horoscope">
                    <p> {{ horoscope.description }} </p>
@@ -55,7 +52,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col m8 offset-m4">
+                <div class="col m4">
+                     <div id="zodiacIMG">
+                        <img src={{ media.poster }} title="Ainorwei Lin on Behance" alt="Ainorwei Lin on Behance {{ horoscope.sign }}" width="300">
+                    </div>
+                </div>
+                <div class="col m8">
                     <iframe width="560" height="315" src= {{ media.youtubeVid }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
