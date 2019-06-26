@@ -13,7 +13,7 @@ function setup() {
   colorMode(HSB);
   console.log("setup run")
   
-    for(var i=0; i<30; i++){
+    for(var i=0; i<12; i++){
     let x=random(0,width)
     let y=random(0,height)
     
